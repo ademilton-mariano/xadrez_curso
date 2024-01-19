@@ -5,12 +5,19 @@ using xadrez_curso;
 using JogoXadrez;
 
 
-var Tabuleiro = new TabuleiroJogo(8, 8);
+try
+{
+    var Tabuleiro = new TabuleiroJogo(8, 8);
 
-Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(0,0));
-Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(1,3));
-Tabuleiro.ColocarPeca(new Rei(Cor.Preta, Tabuleiro), new Posicao(2,4));
+    Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(0,0));
+    Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(1,3));
+    Tabuleiro.ColocarPeca(new Rei(Cor.Preta, Tabuleiro), new Posicao(0,9));
 
-Tela.ImprimirTabuleiro(Tabuleiro);
+    Tela.ImprimirTabuleiro(Tabuleiro);
 
+}
+catch (TabuleiroException e)
+{
+    Console.WriteLine(e.Message);
+}
 Console.ReadLine();
