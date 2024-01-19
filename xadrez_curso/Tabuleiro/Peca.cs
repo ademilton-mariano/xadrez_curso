@@ -5,13 +5,13 @@ public class Peca
     public Posicao Posicao { get; set; }
     public Cor Cor { get; set; }
     public int QuantidadeMovimentos { get; protected set; }
-    public Tabuleiro Tabuleiro { get; protected set; }
+    public TabuleiroJogo TabuleiroJogo { get; protected set; }
 
-    public Peca(Posicao posicao, Cor cor, Tabuleiro tabuleiro)
+    public Peca(Cor cor, TabuleiroJogo tabuleiro)
     {
-        Posicao = posicao;
+        Posicao = null;
         Cor = cor;
-        Tabuleiro = tabuleiro;
+        TabuleiroJogo = tabuleiro;
         QuantidadeMovimentos = 0;
     }
 }

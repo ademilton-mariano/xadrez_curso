@@ -2,11 +2,14 @@
 
 using Tabuleiro;
 using xadrez_curso;
+using JogoXadrez;
 
-Posicao Posicao;
-Tabuleiro.Tabuleiro Tabuleiro;
 
-Tabuleiro = new Tabuleiro.Tabuleiro(8, 8);
+var Tabuleiro = new TabuleiroJogo(8, 8);
+
+Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(0,0));
+Tabuleiro.ColocarPeca(new Torre(Cor.Preta, Tabuleiro), new Posicao(1,3));
+Tabuleiro.ColocarPeca(new Rei(Cor.Preta, Tabuleiro), new Posicao(2,4));
 
 Tela.ImprimirTabuleiro(Tabuleiro);
 

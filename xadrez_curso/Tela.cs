@@ -1,8 +1,10 @@
-﻿namespace xadrez_curso;
+﻿using Tabuleiro;
+
+namespace xadrez_curso;
 
 public class Tela
 {
-    public static void ImprimirTabuleiro(Tabuleiro.Tabuleiro tabuleiro)
+    public static void ImprimirTabuleiro(TabuleiroJogo tabuleiro)
     {
         for (int i = 0; i < tabuleiro.Linhas; i++)
         {
