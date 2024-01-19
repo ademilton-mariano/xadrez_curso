@@ -10,4 +10,10 @@ public class Posicao
         Linha = linha;
         Coluna = coluna;
     }
+
+    public void DefinirValores(int posicaoLinha, int posicaoColuna)
+    {
+        Linha = posicaoLinha;
+        Coluna = posicaoColuna;
+    }
 }

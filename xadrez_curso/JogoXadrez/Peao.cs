@@ -12,4 +12,15 @@ public class Peao : Peca
     {
         return "P ";
     }
+
+    private bool PodeMover(Posicao posicao)
+    {
+        var peca = TabuleiroJogo.Peca(posicao);
+        return peca == null || peca.Cor != Cor;
+    }
+
+    public override bool[,] MovimentosPossiveis()
+    {
+        throw new NotImplementedException();
+    }
 }

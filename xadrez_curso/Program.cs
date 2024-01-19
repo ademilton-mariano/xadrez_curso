@@ -14,6 +14,11 @@ try
         Console.WriteLine("Origem: ");
         var origem = Tela.LerPosicaoXadrez().ToPosicao();
 
+        bool [,] posicoesPossiveis = novaPartida.TabuleiroJogo.Peca(origem).MovimentosPossiveis();
+
+        Console.Clear();
+        Tela.ImprimirTabuleiro(novaPartida.TabuleiroJogo, posicoesPossiveis);
+
         Console.WriteLine("Destino: ");
         var destino = Tela.LerPosicaoXadrez().ToPosicao();
 
