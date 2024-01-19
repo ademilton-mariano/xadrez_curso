@@ -2,9 +2,9 @@
 
 namespace JogoXadrez;
 
-public class Rainha : Peca
+public class DamaRainha : Peca
 {
-    public Rainha(Cor cor, TabuleiroJogo tabuleiro) : base(cor, tabuleiro)
+    public DamaRainha(Cor cor, TabuleiroJogo tabuleiro) : base(cor, tabuleiro)
     {
     }
 
