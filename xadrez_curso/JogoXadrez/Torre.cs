@@ -10,6 +10,6 @@ public class Torre: Peca
 
     public override string ToString()
     {
-        return "T";
+        return "T ";
     }
 }

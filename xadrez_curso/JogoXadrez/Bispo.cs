@@ -10,6 +10,6 @@ public class Bispo : Peca
 
     public override string ToString()
     {
-        return "B";
+        return "B ";
     }
 }

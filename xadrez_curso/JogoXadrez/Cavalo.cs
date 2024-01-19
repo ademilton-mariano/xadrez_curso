@@ -10,6 +10,6 @@ public class Cavalo : Peca
 
     public override string ToString()
     {
-        return "C";
+        return "C ";
     }
 }

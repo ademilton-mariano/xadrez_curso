@@ -50,4 +50,15 @@ public class TabuleiroJogo
         ValidarPosicao(posicao);
         return Peca(posicao) != null;
     }
+
+    public Peca RetirarPeca(Posicao posicao)
+    {
+        if (Peca(posicao) == null)
+            return null;
+
+        var aux = Peca(posicao);
+        aux.Posicao = null;
+        Pecas[posicao.Linha, posicao.Coluna] = null;
+        return aux;
+    }
 }

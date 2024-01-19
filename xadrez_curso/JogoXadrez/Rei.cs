@@ -10,6 +10,6 @@ public class Rei: Peca
 
     public override string ToString()
     {
-        return "R";
+        return "R ";
     }
 }

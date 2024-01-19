@@ -14,4 +14,9 @@ public class Peca
         TabuleiroJogo = tabuleiro;
         QuantidadeMovimentos = 0;
     }
+
+    public void IncrementarQuantidadeMovimentos()
+    {
+        QuantidadeMovimentos++;
+    }
 }

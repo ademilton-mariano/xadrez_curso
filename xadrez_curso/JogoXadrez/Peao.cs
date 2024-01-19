@@ -10,6 +10,6 @@ public class Peao : Peca
 
     public override string ToString()
     {
-        return "P";
+        return "P ";
     }
 }

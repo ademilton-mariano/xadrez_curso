@@ -10,6 +10,6 @@ public class DamaRainha : Peca
 
     public override string ToString()
     {
-        return "D";
+        return "D ";
     }
 }
